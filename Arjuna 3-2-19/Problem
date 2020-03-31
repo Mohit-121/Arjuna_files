@@ -1,0 +1,36 @@
+A small toy company, as part of its campaign, has announced an open competition to arrange
+a few boxes of toys in an order in a short time and win an impressive prize.  
+Boxes with Toys are labelled (1) and Empty boxes (0). Mihika wants to participate and win a prize.   
+The company places N boxes, both filled with Toys (1) or Empty (0), in a row in a container. 
+Mihika must arrange all boxes in a line/row such that all empty boxes must 
+follow the boxes with toys i.e., first all ones (1) then all zeros (0). 
+There can be several rounds of arrangement till all the boxes are arranged as per the rule. 
+In each round, Mihika, can swap empty box (0) with only with its adjacent filled box (1).
+A box, either with toy or empty, can swapped only once in a round.  
+Given, the total number of boxes (N) and the initial order of boxes as a series of 1s and 0s, 
+write a program to find the minimum number of rounds needed to arrange the boxes as defined above.  
+
+Input
+10 
+0 1 1 1 0 1 1 0 1 1 
+
+Output
+7 
+
+Explanation :
+
+The first line 10 – Total number of boxes
+ Second line  0 1 1 1 0 1 1 0 1 1 
+– Initial arrangement of boxes 
+ Initial arrangement  [ 0 1 1 1 0 1 1 0 1 1 ] 
+ After1st round         [ 1 0 1 1 1 0 1 1 0 1 ] 
+ After 2nd round       [ 1 1 0 1 1 1 0 1 1 0 ]  
+ After 3rd round        [ 1 1 1 0 1 1 1 0 1 0 ]  
+After 4th round        [ 1 1 1 1 0 1 1 1 0 0 ]  
+ After 5th round        [ 1 1 1 1 1 0 1 1 0 0 ]  
+ After 6th round        [ 1 1 1 1 1 1 0 1 0 0 ] 
+After 7th round       [ 1 1 1 1 1 1 1 0 0 0 ] 
+
+
+
+
